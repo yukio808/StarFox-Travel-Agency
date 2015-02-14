@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
@@ -3005,4 +3006,263 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 body {
-  background: #333333; }
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif; }
+
+header {
+  background-color: #99CCCC;
+  background-image: url('/images/header_bg.svg');
+  height: 200px; }
+  header .ship1 {
+    background-image: url('/images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 150px;
+    height: 110px;
+    z-index: -1;
+    margin-bottom: -5px; }
+  header .desktop_logo {
+    text-align: center;
+    height: 172px;
+    margin-top: -10px; }
+    header .desktop_logo a {
+      text-align: center;
+      font-size: 22px;
+      color: #333333;
+      margin-top: -10px; }
+      header .desktop_logo a span {
+        font-weight: bold;
+        font-size: 22px; }
+  header nav.top-bar {
+    z-index: 1;
+    text-align: center;
+    margin-top: -2px;
+    height: auto;
+    background-color: #333333;
+    border: 2px solid;
+    border-radius: 5px; }
+    header nav.top-bar section {
+      display: inline-block; }
+      header nav.top-bar section ul {
+        padding-top: 20px; }
+        header nav.top-bar section ul li {
+          text-align: center;
+          display: inline-block; }
+          header nav.top-bar section ul li a {
+            padding-right: 15px;
+            padding-left: 15px;
+            color: #99CCCC;
+            display: block;
+            line-height: 25px; }
+          header nav.top-bar section ul li a:hover {
+            color: #FFFFFF; }
+
+.hero {
+  margin-top: 80px;
+  padding-bottom: 20px;
+  text-align: center; }
+  .hero .hero_wrap {
+    text-align: center;
+    background-color: #99CCCC;
+    border: solid #99CCCC 2px;
+    border-radius: 5px;
+    padding-bottom: 40px; }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .hero .hero_wrap {
+        margin-bottom: 40px; } }
+    .hero .hero_wrap .hero_text {
+      float: left; }
+      @media only screen and (min-width:40.063em) and (max-width:64em) {
+        .hero .hero_wrap .hero_text {
+          text-align: center; } }
+      .hero .hero_wrap .hero_text p {
+        float: left;
+        font-size: 28px;
+        font-weight: lighter;
+        max-width: 60%;
+        padding-left: 50px;
+        padding-top: 50px; }
+        @media only screen and (min-width:40.063em) and (max-width:64em) {
+          .hero .hero_wrap .hero_text p {
+            max-width: 87%;
+            float: none;
+            padding-left: 0px;
+            margin: 110px auto 0px; } }
+    .hero .hero_wrap .ship2 {
+      background-image: url('/images/ship.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 300px;
+      height: 300px;
+      z-index: 1;
+      margin-top: -85px; }
+      @media only screen and (min-width:40.063em) and (max-width:64em) {
+        .hero .hero_wrap .ship2 {
+          background-position: top;
+          z-index: 0;
+          margin-top: -72px; } }
+    .hero .hero_wrap .hero_action {
+      float: right; }
+      @media only screen and (min-width:40.063em) and (max-width:64em) {
+        .hero .hero_wrap .hero_action {
+          height: auto;
+          width: auto;
+          float: none;
+          margin-bottom: 30px;
+          padding-top: 120px; } }
+      .hero .hero_wrap .hero_action .hero_button {
+        background-color: #333333;
+        padding-top: 20px;
+        padding-bottom: 11px;
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 22px;
+        font-weight: lighter;
+        color: #CCCCCC;
+        border-bottom: solid #333333 9px; }
+        @media only screen and (min-width:64.063em) and (max-width:90em) {
+          .hero .hero_wrap .hero_action .hero_button {
+            float: right;
+            margin-top: -95px;
+            margin-left: -295px;
+            position: absolute; } }
+        @media only screen and (min-width:40.063em) and (max-width:64em) {
+          .hero .hero_wrap .hero_action .hero_button {
+            float: none; } }
+      .hero .hero_wrap .hero_action .hero_button:hover {
+        background-color: #666666; }
+
+.highlights .row .to_the_moon {
+  background-color: #666666; }
+  @media only screen and (min-width:64.063em) and (max-width:90em) {
+    .highlights .row .to_the_moon {
+      height: 290px;
+      border: solid #666666 2px;
+      border-radius: 6px; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .highlights .row .to_the_moon {
+      background-color: red; } }
+  .highlights .row .to_the_moon h3 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    padding-top: 15px; }
+    @media only screen and (min-width:64.063em) and (max-width:90em) {
+      .highlights .row .to_the_moon h3 {
+        border-bottom: solid #555555 1px; } }
+  .highlights .row .to_the_moon h4 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 56px;
+    border-top: solid #777777 1px;
+    margin-top: 0px;
+    padding-top: 20px; }
+  .highlights .row .to_the_moon h4 span {
+    width: 210px;
+    border-bottom: solid #FFFFFF 9px;
+    padding-bottom: 8px;
+    font-weight: lighter; }
+  .highlights .row .to_the_moon p {
+    text-align: center;
+    margin: 25px;
+    margin-left: 44px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    padding-top: 20px;
+    width: 210px; }
+.highlights .row .to_the_moon:hover {
+  background-color: #444444;
+  border: solid #444444 2px;
+  border-radius: 6px; }
+.highlights .row .just_around_the_earth {
+  background-color: #666666;
+  height: 290px;
+  border: solid #666666 2px;
+  border-radius: 6px; }
+  .highlights .row .just_around_the_earth h3 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    border-bottom: solid #555555 1px; }
+  .highlights .row .just_around_the_earth h4 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 56px;
+    border-top: solid #777777 1px;
+    margin-top: 0px;
+    padding-top: 20px; }
+  .highlights .row .just_around_the_earth h4 span {
+    border-bottom: solid #FFFFFF 9px;
+    padding-bottom: 8px;
+    font-weight: lighter; }
+  .highlights .row .just_around_the_earth p {
+    text-align: center;
+    margin: 25px;
+    margin-left: 44px;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: lighter;
+    padding-top: 20px;
+    width: 210px; }
+.highlights .row .just_around_the_earth:hover {
+  background-color: #444444;
+  border-radius: 6px; }
+.highlights .row .highlight {
+  background-color: #666666;
+  height: 292px;
+  border-radius: 7px;
+  text-align: center; }
+  .highlights .row .highlight .just_to_jupiter {
+    padding: 15px;
+    border-bottom: solid #555555 1px; }
+  .highlights .row .highlight .center_of_the_earth {
+    padding: 15px;
+    border-top: solid #777777 1px; }
+  .highlights .row .highlight h5 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    margin: 0px; }
+  .highlights .row .highlight h6 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: lighter;
+    margin: 0px; }
+  .highlights .row .highlight a.more_deals_desktop {
+    height: 70px;
+    width: 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: #FFFFFF;
+    display: block;
+    padding-top: 20px; }
+  .highlights .row .highlight a.more_deals_desktop span {
+    text-align: center;
+    font-size: 24px;
+    background-image: url('/images/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 40px;
+    padding: 52px;
+    position: relative;
+    margin-left: -47px; }
+  .highlights .row .highlight a.more_deals_desktop:hover {
+    background-color: #444444;
+    margin-top: -2px; }
+
+footer {
+  display: block;
+  background-color: #444444;
+  text-align: center;
+  color: #666666;
+  margin-top: 40px; }
+  footer p {
+    font-weight: lighter;
+    font-size: 14px;
+    padding-top: 35px;
+    padding-bottom: 15px; }

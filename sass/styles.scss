@@ -1,8 +1,369 @@
 @import "partials/settings";
 @import "partials/foundation";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 $dark-color : #333333;
+$blueGen: #99CCCC;
+$hover_color: #666666;
+$botBorCol1: #042029;
+$white: #FFFFFF;
+$shader_txt: #CCCCCC;
+$borderpt1: #555555;
+$borderpt2: #777777;
+$hover_color_price: #444444;
 
-body {
-  background: $dark-color;
+
+body{
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
 }
+header{
+  background-color: $blueGen;
+  background-image: url('/images/header_bg.svg');
+  height:200px;
+  .ship1{
+    background-image: url('/images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 150px;
+    height: 110px;
+    z-index: -1;
+    margin-bottom: -5px; 
+    @media #{$small-only} {
+         
+       }   
+  }
+  .desktop_logo{
+    text-align: center;
+    height: 172px;
+    margin-top: -10px;
+    a{
+      text-align: center;
+      font-size: 22px;
+      color: $dark-color;
+      margin-top: -10px;
+      span{
+        font-weight: bold;
+        font-size: 22px;
+      }
+    }
+  }
+  nav.top-bar{
+    z-index: 1;
+    text-align: center;
+    margin-top: -2px;
+    height: auto;
+    background-color: $dark-color;
+    border: 2px solid;
+    border-radius: 5px;
+    section{
+      display: inline-block;
+      ul{
+        padding-top: 20px;
+        // border: solid blue 3px;
+        li{      
+          text-align: center;
+          display: inline-block;
+          // background-color: green;
+          // border: solid green 1px;
+          a{
+            padding-right: 15px;
+            padding-left: 15px;
+            color: $blueGen;
+            display: block;
+            // background-color: red;
+            line-height: 25px;
+          }
+          a:hover{
+            color: $white;
+            // background-color: green;
+          }
+        }
+      }
+    }
+  }
+}
+.hero{
+  margin-top: 80px;
+  padding-bottom: 20px;
+  text-align: center;
+  .hero_wrap{
+    text-align: center;
+    background-color: $blueGen;
+    border: solid $blueGen 2px;
+    border-radius: 5px;
+    padding-bottom: 40px;
+    @media #{$medium-only} {
+      margin-bottom: 40px;
+    }
+    .hero_text{
+      float: left;
+      @media #{$medium-only} {
+        text-align: center;
+      }
+      p{
+        float: left;
+        font-size: 28px;
+        font-weight: lighter;
+        max-width: 60%;
+        padding-left: 50px;
+        padding-top: 50px;
+        @media #{$medium-only} {
+          max-width:87%;
+          float: none;
+          padding-left:0px;
+          margin: 110px auto 0px;
+          // margin-top: 110px;
+        }
+      }
+    } 
+  .ship2{
+    background-image: url('/images/ship.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 300px;
+    height: 300px;
+    z-index: 1;
+    margin-top: -85px;
+    @media #{$medium-only} {
+      background-position: top;
+      z-index: 0;
+      margin-top: -72px;
+    }
+  }
+    // float: right;÷
+  .hero_action{
+    float: right;
+    @media #{$medium-only} {     
+    height: auto;
+    width: auto;
+    float: none;
+    margin-bottom: 30px;
+    padding-top: 120px;
+    // margin-top: 50px;
+    // background-color: red;
+
+    }
+    .hero_button{ 
+      background-color: $dark-color;
+      padding-top: 20px;
+      padding-bottom: 11px;
+      padding-left: 70px;
+      padding-right: 70px;
+      font-size: 22px;
+      font-weight: lighter;
+      color: $shader_txt;
+      border-bottom: solid $dark-color 9px;
+      @media #{$large-only} {
+      float: right;
+      margin-top: -95px;
+      margin-left: -295px;
+      position: absolute;
+      }
+      @media #{$medium-only} {
+        float: none;
+        // margin-bottom: -20px;
+        // margin: -110500px;
+      }
+    }
+    .hero_button:hover{
+      background-color: $hover_color;
+    }
+  }
+  }
+}
+
+.highlights{
+  .row{
+    .to_the_moon{
+      background-color: $hover_color;
+      @media #{$large-only} {
+      height: 290px;
+      border: solid $hover_color 2px;
+      border-radius: 6px;
+        
+      }
+      @media #{$medium-only} {
+        background-color: red;
+      }
+      h3{
+        color: $white;
+        // font-weight: bold;
+        text-align: center;
+        // margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        @media #{$large-only} {
+        border-bottom: solid $borderpt1 1px;
+        }
+      }
+      h4{
+        text-align: center;
+        color: $white;
+        font-size: 56px;
+        // font-weight: lighter;
+        border-top: solid $borderpt2 1px;
+        margin-top: 0px;
+        padding-top: 20px;
+      }
+      h4 span{
+        width: 210px;
+        border-bottom: solid $white 9px;
+        padding-bottom: 8px;
+        font-weight: lighter;
+
+      }
+      p{
+        text-align: center;
+        margin: 25px;
+        margin-left: 44px;
+        font-size: 14px;
+        color: $white;
+        font-weight: lighter;
+        padding-top: 20px;
+        width: 210px;
+      }
+    }
+    .to_the_moon:hover{ 
+      background-color: $hover_color_price;
+      border: solid $hover_color_price 2px;
+      border-radius: 6px;
+
+    }
+    .just_around_the_earth{
+      background-color: $hover_color;
+      height: 290px;
+      border: solid $hover_color 2px;
+      border-radius: 6px;
+      // margin-right: 0px;
+      // margin-left: 0px;
+      h3{
+        color: $white;
+        // font-weight: bold;
+        text-align: center;
+        // margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        border-bottom: solid $borderpt1 1px;
+      }
+      h4{
+        text-align: center;
+        color: $white;
+        font-size: 56px;
+        // font-weight: lighter;
+        border-top: solid $borderpt2 1px;
+        margin-top: 0px;
+        padding-top: 20px;
+      }
+      h4 span{
+        // width: 0px;
+        border-bottom: solid $white 9px;
+        padding-bottom: 8px;
+        font-weight: lighter;
+
+      }
+      p{
+        text-align: center;
+        margin: 25px;
+        margin-left: 44px;
+        font-size: 14px;
+        color: $white;
+        font-weight: lighter;
+        padding-top: 20px;
+        width: 210px;
+      }
+    }
+    .just_around_the_earth:hover{
+      background-color: $hover_color_price;
+      // border: solid $hover_color_price 2px;
+      border-radius: 6px;
+    }
+    .highlight{
+      background-color: $hover_color;
+      height: 292px;
+      // border: solid $hover_color 2px;
+      border-radius: 7px;
+      text-align: center;
+      // margin-right: 0px;
+      // margin-left: 0px;
+      .just_to_jupiter{
+        padding: 15px;
+        border-bottom: solid $borderpt1 1px;
+      }
+      .center_of_the_earth{
+        padding: 15px;
+        border-top: solid $borderpt2 1px;
+      }
+      h5{
+        color: $white;
+        text-align: center;
+        font-size: 15px;
+        margin: 0px;
+      }
+      h6{
+        text-align: center;
+        color: $white;
+        font-size: 42px;
+        font-weight: lighter;
+        margin: 0px;
+      }
+      a.more_deals_desktop{
+        height: 70px;
+        width: 100%;
+        // border: solid $hover_color 2px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius:  6px;
+        color: $white;
+        // padding: 60px;
+        // overflow: hidden;
+        // z-index: -1;
+        display: block;
+        padding-top: 20px;
+      }
+      a.more_deals_desktop span{
+        text-align: center;
+        font-size: 24px;
+        background-image: url('/images/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 40px;
+        padding: 52px;
+        position: relative;
+        margin-left: -47px;
+      }
+      a.more_deals_desktop:hover{
+        // text-align: center;
+        // height: 70px;
+        // border-bottom: solid $hover_color_price 5px;
+        background-color: $hover_color_price;
+        margin-top: -2px;
+
+        // padding-left: 20px;
+
+      }
+    }
+  }
+}
+footer{
+  display: block;
+  background-color: $hover_color_price;
+  text-align: center;
+  color: $hover_color;
+  margin-top: 40px;
+  p{
+    font-weight: lighter;
+    font-size: 14px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+}
+
+
+
+
+
+
+
+
