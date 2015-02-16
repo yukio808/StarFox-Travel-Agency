@@ -4,11 +4,11 @@ meta.foundation-version {
 
 meta.foundation-mq-small {
   font-family: "/only screen/";
-  width: 0; }
+  width: 0em; }
 
 meta.foundation-mq-small-only {
   font-family: "/only screen and (max-width: 40em)/";
-  width: 0; }
+  width: 0em; }
 
 meta.foundation-mq-medium {
   font-family: "/only screen and (min-width:40.063em)/";
@@ -3105,7 +3105,6 @@ header {
       float: right; }
       @media only screen and (min-width:40.063em) and (max-width:64em) {
         .hero .hero_wrap .hero_action {
-          height: auto;
           width: auto;
           float: none;
           margin-bottom: 30px;
@@ -3120,7 +3119,7 @@ header {
         font-weight: lighter;
         color: #CCCCCC;
         border-bottom: solid #333333 9px; }
-        @media only screen and (min-width:64.063em) and (max-width:90em) {
+        @media only screen and (min-width:64.063em) {
           .hero .hero_wrap .hero_action .hero_button {
             float: right;
             margin-top: -95px;
@@ -3129,8 +3128,6 @@ header {
         @media only screen and (min-width:40.063em) and (max-width:64em) {
           .hero .hero_wrap .hero_action .hero_button {
             float: none; } }
-      .hero .hero_wrap .hero_action .hero_button:hover {
-        background-color: #666666; }
 
 .highlights .row .to_the_moon {
   background-color: #666666; }
@@ -3151,6 +3148,10 @@ header {
     @media only screen and (min-width:64.063em) and (max-width:90em) {
       .highlights .row .to_the_moon h3 {
         border-bottom: solid #555555 1px; } }
+  @media medium-only {
+    .highlights .row .to_the_moon .highlight_description {
+      float: right;
+      background-color: red; } }
   .highlights .row .to_the_moon h4 {
     text-align: center;
     color: #FFFFFF;
@@ -3172,6 +3173,10 @@ header {
     font-weight: lighter;
     padding-top: 20px;
     width: 210px; }
+    @media medium-only {
+      .highlights .row .to_the_moon p {
+        color: red;
+        background-color: #99CCCC; } }
 .highlights .row .to_the_moon:hover {
   background-color: #444444;
   border: solid #444444 2px;

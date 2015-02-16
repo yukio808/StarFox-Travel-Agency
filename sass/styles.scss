@@ -29,9 +29,6 @@ header{
     height: 110px;
     z-index: -1;
     margin-bottom: -5px; 
-    @media #{$small-only} {
-         
-       }   
   }
   .desktop_logo{
     text-align: center;
@@ -93,11 +90,13 @@ header{
     border: solid $blueGen 2px;
     border-radius: 5px;
     padding-bottom: 40px;
+    
     @media #{$medium-only} {
       margin-bottom: 40px;
     }
     .hero_text{
       float: left;
+      
       @media #{$medium-only} {
         text-align: center;
       }
@@ -108,6 +107,7 @@ header{
         max-width: 60%;
         padding-left: 50px;
         padding-top: 50px;
+        
         @media #{$medium-only} {
           max-width:87%;
           float: none;
@@ -117,59 +117,57 @@ header{
         }
       }
     } 
-  .ship2{
-    background-image: url('/images/ship.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 300px;
-    height: 300px;
-    z-index: 1;
-    margin-top: -85px;
-    @media #{$medium-only} {
-      background-position: top;
-      z-index: 0;
-      margin-top: -72px;
-    }
-  }
-    // float: right;÷
-  .hero_action{
-    float: right;
-    @media #{$medium-only} {     
-    height: auto;
-    width: auto;
-    float: none;
-    margin-bottom: 30px;
-    padding-top: 120px;
-    // margin-top: 50px;
-    // background-color: red;
-
-    }
-    .hero_button{ 
-      background-color: $dark-color;
-      padding-top: 20px;
-      padding-bottom: 11px;
-      padding-left: 70px;
-      padding-right: 70px;
-      font-size: 22px;
-      font-weight: lighter;
-      color: $shader_txt;
-      border-bottom: solid $dark-color 9px;
-      @media #{$large-only} {
-      float: right;
-      margin-top: -95px;
-      margin-left: -295px;
-      position: absolute;
-      }
+    .ship2{
+      background-image: url('/images/ship.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 300px;
+      height: 300px;
+      z-index: 1;
+      margin-top: -85px;
+      
       @media #{$medium-only} {
-        float: none;
-        // margin-bottom: -20px;
-        // margin: -110500px;
+        background-position: top;
+        z-index: 0;
+        margin-top: -72px;
       }
     }
-    .hero_button:hover{
-      background-color: $hover_color;
+      // float: right;÷
+    .hero_action{
+      float: right;
+      
+      @media #{$medium-only} {     
+        //height: auto;
+        width: auto;
+        float: none;
+        margin-bottom: 30px;
+        padding-top: 120px;
+      }
+      .hero_button{ 
+        background-color: $dark-color;
+        padding-top: 20px;
+        padding-bottom: 11px;
+        padding-left: 70px;
+        padding-right: 70px;
+        font-size: 22px;
+        font-weight: lighter;
+        color: $shader_txt;
+        border-bottom: solid $dark-color 9px;
+        
+        @media #{$large-up} {
+          float: right;
+          margin-top: -95px;
+          margin-left: -295px;
+          position: absolute;
+        }
+        
+        @media #{$medium-only} {
+          float: none;
+          // margin-bottom: -20px;
+          // margin: -110500px;
+        }
+      }
     }
-  }
   }
 }
 
@@ -177,12 +175,13 @@ header{
   .row{
     .to_the_moon{
       background-color: $hover_color;
+      
       @media #{$large-only} {
-      height: 290px;
-      border: solid $hover_color 2px;
-      border-radius: 6px;
-        
+        height: 290px;
+        border: solid $hover_color 2px;
+        border-radius: 6px;  
       }
+      
       @media #{$medium-only} {
         background-color: red;
       }
@@ -194,8 +193,15 @@ header{
         margin-bottom: 0px;
         padding-bottom: 20px;
         padding-top: 15px;
+        
         @media #{$large-only} {
-        border-bottom: solid $borderpt1 1px;
+          border-bottom: solid $borderpt1 1px;
+        }
+      }
+      .highlight_description{
+        @media #{medium-only} {
+          float: right;
+          background-color: red;
         }
       }
       h4{
@@ -223,6 +229,10 @@ header{
         font-weight: lighter;
         padding-top: 20px;
         width: 210px;
+        @media #{medium-only} {
+          color: red;
+          background-color: $blueGen;
+        }
       }
     }
     .to_the_moon:hover{ 
