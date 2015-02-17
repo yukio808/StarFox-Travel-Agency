@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300.css);
 meta.foundation-version {
   font-family: "/5.5.1/"; }
 
@@ -7,7 +7,7 @@ meta.foundation-mq-small {
   width: 0em; }
 
 meta.foundation-mq-small-only {
-  font-family: "/only screen and (max-width: 40em)/";
+  font-family: "/only screen and (max-width: 40.063em)/";
   width: 0em; }
 
 meta.foundation-mq-medium {
@@ -15,7 +15,7 @@ meta.foundation-mq-medium {
   width: 40.063em; }
 
 meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
+  font-family: "/only screen and (min-width:40.063em) and (max-width:64.063em)/";
   width: 40.063em; }
 
 meta.foundation-mq-large {
@@ -57,7 +57,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -1338,7 +1338,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -1744,7 +1744,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -1903,7 +1903,7 @@ meta.foundation-mq-topbar {
     padding-bottom: .4125rem;
     margin-bottom: 0;
     font-size: 0.75rem; }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 40.063em) {
       .top-bar .button, .top-bar button {
         position: relative;
         top: -1px; } }
@@ -1994,7 +1994,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
@@ -2349,7 +2349,7 @@ meta.foundation-mq-topbar {
 .text-justify {
   text-align: justify !important; }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 40.063em) {
   .small-only-text-left {
     text-align: left !important; }
   .small-only-text-right {
@@ -2369,7 +2369,7 @@ meta.foundation-mq-topbar {
   .small-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:40.063em) and (max-width:64em) {
+@media only screen and (min-width:40.063em) and (max-width:64.063em) {
   .medium-only-text-left {
     text-align: left !important; }
   .medium-only-text-right {
@@ -2482,7 +2482,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -3006,15 +3006,14 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 body {
-  font-size: 22px;
-  font-family: 'Open Sans', sans-serif; }
+  font-size: 22px; }
 
 @media only screen and (min-width:40.063em) {
   header {
     background-color: #99CCCC;
     background-image: url('/images/header_bg.svg');
     height: 200px; } }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 40.063em) {
   header {
     width: 100%; } }
 header .ship1 {
@@ -3037,10 +3036,14 @@ header .desktop_logo {
     header .desktop_logo a span {
       font-weight: bold;
       font-size: 22px; }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 40.063em) {
   header .small-12 {
     padding: 0px;
     background-color: #99CCCC; } }
+@media only screen and (min-width:40.063em) and (max-width:64.063em) {
+  header .small-12 {
+    padding-right: 25px;
+    padding-left: 25px; } }
 @media only screen and (min-width:40.063em) {
   header nav.top-bar {
     z-index: 1;
@@ -3050,12 +3053,12 @@ header .desktop_logo {
     background-color: #333333;
     border: 2px solid;
     border-radius: 5px; } }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 40.063em) {
   header nav.top-bar {
     position: relative;
     z-index: 1;
     margin-bottom: 0px;
-    margin-top: 15px;
+    margin-top: 5px;
     width: 100%; }
     header nav.top-bar .mobile_logo {
       background-image: url('/images/logo.svg');
@@ -3070,6 +3073,14 @@ header .desktop_logo {
       padding-left: 100px;
       padding-bottom: 15px;
       padding-top: 15px; }
+      @media only screen and (max-width: 40.063em) {
+        header nav.top-bar .nameof {
+          color: #99CCCC;
+          font-weight: lighter; }
+          header nav.top-bar .nameof span {
+            font-weight: bolder;
+            font-size: 25px;
+            color: #99CCCC; } }
     header nav.top-bar .agency {
       visibility: hidden; } }
 header nav.top-bar ul.show-for-small li.toggle-topbar a {
@@ -3080,12 +3091,12 @@ header nav.top-bar ul.show-for-small li.toggle-topbar a {
   background-position: 50%; }
 header nav.top-bar section {
   display: inline-block; }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 40.063em) {
     header nav.top-bar section {
       z-index: 1; } }
   header nav.top-bar section ul {
     padding-top: 20px; }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 40.063em) {
       header nav.top-bar section ul {
         margin: 0px;
         padding: 0px;
@@ -3097,7 +3108,7 @@ header nav.top-bar section {
     header nav.top-bar section ul li {
       text-align: center;
       display: inline-block; }
-      @media only screen and (max-width: 40em) {
+      @media only screen and (max-width: 40.063em) {
         header nav.top-bar section ul li {
           text-align: left;
           width: 100%;
@@ -3112,7 +3123,7 @@ header nav.top-bar section {
         display: block;
         line-height: 25px;
         width: 100%; }
-        @media only screen and (max-width: 40em) {
+        @media only screen and (max-width: 40.063em) {
           header nav.top-bar section ul li a {
             background-color: #333333;
             display: block;
@@ -3125,15 +3136,19 @@ header nav.top-bar section {
       header nav.top-bar section ul li a:hover {
         color: #FFFFFF; }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 40.063em) {
   .small-12 {
     padding: 0px; } }
+@media only screen and (min-width:40.063em) and (max-width:64.063em) {
+  .small-12 {
+    padding-right: 25px;
+    padding-left: 25px; } }
 
 .hero {
   margin-top: 80px;
-  padding-bottom: 20px;
+  padding-bottom: 55px;
   text-align: center; }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 40.063em) {
     .hero {
       text-align: center;
       padding: 0px;
@@ -3145,12 +3160,12 @@ header nav.top-bar section {
     border: solid #99CCCC 2px;
     border-radius: 5px;
     padding-bottom: 40px; }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
+    @media only screen and (min-width:40.063em) and (max-width:64.063em) {
       .hero .hero_wrap {
         margin-bottom: 40px; } }
     .hero .hero_wrap .hero_text {
       float: left; }
-      @media only screen and (min-width:40.063em) and (max-width:64em) {
+      @media only screen and (min-width:40.063em) and (max-width:64.063em) {
         .hero .hero_wrap .hero_text {
           text-align: center; } }
       .hero .hero_wrap .hero_text p {
@@ -3160,13 +3175,13 @@ header nav.top-bar section {
         max-width: 60%;
         padding-left: 50px;
         padding-top: 50px; }
-        @media only screen and (min-width:40.063em) and (max-width:64em) {
+        @media only screen and (min-width:40.063em) and (max-width:64.063em) {
           .hero .hero_wrap .hero_text p {
             max-width: 87%;
             float: none;
             padding-left: 0px;
             margin: 110px auto 0px; } }
-        @media only screen and (max-width: 40em) {
+        @media only screen and (max-width: 40.063em) {
           .hero .hero_wrap .hero_text p {
             max-width: 90%;
             padding: auto;
@@ -3179,24 +3194,24 @@ header nav.top-bar section {
       height: 300px;
       z-index: 1;
       margin-top: -85px; }
-      @media only screen and (min-width:40.063em) and (max-width:64em) {
+      @media only screen and (min-width:40.063em) and (max-width:64.063em) {
         .hero .hero_wrap .ship2 {
           background-position: top;
           z-index: 0;
           margin-top: -72px; } }
-      @media only screen and (max-width: 40em) {
+      @media only screen and (max-width: 40.063em) {
         .hero .hero_wrap .ship2 {
           background-position: center;
           margin-top: -30px; } }
     .hero .hero_wrap .hero_action {
       float: right; }
-      @media only screen and (min-width:40.063em) and (max-width:64em) {
+      @media only screen and (min-width:40.063em) and (max-width:64.063em) {
         .hero .hero_wrap .hero_action {
           width: auto;
           float: none;
           margin-bottom: 40px;
           padding-top: 180px; } }
-      @media only screen and (max-width: 40em) {
+      @media only screen and (max-width: 40.063em) {
         .hero .hero_wrap .hero_action {
           float: none;
           margin-top: 222px;
@@ -3217,19 +3232,19 @@ header nav.top-bar section {
             margin-top: -95px;
             margin-left: -295px;
             position: absolute; } }
-        @media only screen and (min-width:40.063em) and (max-width:64em) {
+        @media only screen and (min-width:40.063em) and (max-width:64.063em) {
           .hero .hero_wrap .hero_action .hero_button {
             float: none; } }
-        @media only screen and (max-width: 40em) {
+        @media only screen and (max-width: 40.063em) {
           .hero .hero_wrap .hero_action .hero_button {
             float: none; } }
         .hero .hero_wrap .hero_action .hero_button:hover {
           background-color: #666666; }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 40.063em) {
   .highlights .row .small-12 {
-    padding-left: 20%;
-    padding-right: 20%; } }
+    padding-left: 8%;
+    padding-right: 8%; } }
 .highlights .row .to_the_moon {
   background-color: #666666; }
   @media only screen and (min-width:64.063em) {
@@ -3237,10 +3252,10 @@ header nav.top-bar section {
       height: 290px;
       border: solid #666666 2px;
       border-radius: 6px; } }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
+  @media only screen and (min-width:40.063em) and (max-width:64.063em) {
     .highlights .row .to_the_moon {
       max-height: 200px; } }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 40.063em) {
     .highlights .row .to_the_moon {
       margin-top: 54px; } }
   .highlights .row .to_the_moon .highlight_description {
@@ -3251,14 +3266,14 @@ header nav.top-bar section {
     margin-bottom: 0px;
     padding-bottom: 20px;
     padding-top: 15px; }
-    @media only screen and (min-width:64.063em) and (max-width:90em) {
+    @media only screen and (min-width:64.063em) {
       .highlights .row .to_the_moon h3 {
         border-bottom: solid #555555 1px; } }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
+    @media only screen and (min-width:40.063em) and (max-width:64.063em) {
       .highlights .row .to_the_moon h3 {
         max-width: auto;
         padding-top: 50px; } }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 40.063em) {
       .highlights .row .to_the_moon h3 {
         border-bottom: solid #555555 1px; } }
   .highlights .row .to_the_moon h4 {
@@ -3270,7 +3285,7 @@ header nav.top-bar section {
     @media only screen and (min-width:64.063em) {
       .highlights .row .to_the_moon h4 {
         border-top: solid #777777 1px; } }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
+    @media only screen and (min-width:40.063em) and (max-width:64.063em) {
       .highlights .row .to_the_moon h4 {
         float: left;
         border-right: solid #555555 1px;
@@ -3280,7 +3295,7 @@ header nav.top-bar section {
         margin-bottom: auto;
         width: 45%;
         height: 200px; } }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 40.063em) {
       .highlights .row .to_the_moon h4 {
         border-top: solid #777777 1px; } }
   .highlights .row .to_the_moon h4 span {
@@ -3297,12 +3312,12 @@ header nav.top-bar section {
     font-weight: lighter;
     padding-top: 20px;
     width: 210px; }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
+    @media only screen and (min-width:40.063em) and (max-width:64.063em) {
       .highlights .row .to_the_moon p {
         margin: auto;
         padding-right: 10px;
         width: auto; } }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 40.063em) {
       .highlights .row .to_the_moon p {
         text-align: center;
         margin: auto;
@@ -3316,11 +3331,11 @@ header nav.top-bar section {
   height: 290px;
   border: solid #666666 2px;
   border-radius: 6px; }
-  @media only screen and (min-width:40.063em) and (max-width:64em) {
+  @media only screen and (min-width:40.063em) and (max-width:64.063em) {
     .highlights .row .just_around_the_earth {
       max-height: 200px;
       margin-top: 54px; } }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (max-width: 40.063em) {
     .highlights .row .just_around_the_earth {
       margin-top: 54px; } }
   .highlights .row .just_around_the_earth h2 {
@@ -3343,7 +3358,7 @@ header nav.top-bar section {
     @media only screen and (min-width:64.063em) {
       .highlights .row .just_around_the_earth h4 {
         border-top: solid #777777 1px; } }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
+    @media only screen and (min-width:40.063em) and (max-width:64.063em) {
       .highlights .row .just_around_the_earth h4 {
         float: left;
         height: 200px;
@@ -3352,7 +3367,7 @@ header nav.top-bar section {
         margin-top: -2px;
         padding-top: 50px;
         width: 45%; } }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 40.063em) {
       .highlights .row .just_around_the_earth h4 {
         border-top: solid #777777 1px; } }
   .highlights .row .just_around_the_earth h4 span {
@@ -3368,12 +3383,12 @@ header nav.top-bar section {
     font-weight: lighter;
     padding-top: 20px;
     width: 210px; }
-    @media only screen and (min-width:40.063em) and (max-width:64em) {
+    @media only screen and (min-width:40.063em) and (max-width:64.063em) {
       .highlights .row .just_around_the_earth p {
         margin: auto;
         padding-right: 10px;
         width: auto; } }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 40.063em) {
       .highlights .row .just_around_the_earth p {
         margin: auto;
         padding: auto;
@@ -3433,8 +3448,14 @@ a.more_deals_mobile {
   width: 100%;
   background-color: #99CCCC;
   margin-top: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-top: 7px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
+  height: 50px;
+  background-image: url("/images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 65% center;
+  background-size: 40px 40px; }
 
 footer {
   display: block;
@@ -3443,7 +3464,7 @@ footer {
   color: #666666; }
   @media only screen and (min-width:40.063em) {
     footer {
-      margin-top: 40px; } }
+      margin-top: 55px; } }
   footer p {
     font-weight: lighter;
     font-size: 14px;

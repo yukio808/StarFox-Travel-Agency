@@ -1,6 +1,6 @@
+@import "http://fonts.googleapis.com/css?family=Open+Sans:400,300.css";
 @import "partials/settings";
 @import "partials/foundation";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 $dark-color : #333333;
 $blueGen: #99CCCC;
@@ -15,7 +15,6 @@ $hover_color_price: #444444;
 
 body{
   font-size: 22px;
-  font-family: 'Open Sans', sans-serif;
 }
 header{
   @media #{$medium-up} {
@@ -26,7 +25,6 @@ header{
   }
   @media #{$small-only} {
     width: 100%;
-    // padding: 0px;
   }
   .ship1{
     background-image: url('/images/logo.svg');
@@ -57,6 +55,10 @@ header{
       padding:0px;
       background-color: $blueGen;
     }
+    @media #{$medium-only} {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
   }
   nav.top-bar{
     @media #{$medium-up} { 
@@ -72,10 +74,8 @@ header{
       position: relative;
       z-index: 1;
       margin-bottom:0px;
-      margin-top: 15px;
+      margin-top: 5px;
       width: 100%;
-      // padding-top: 10px;
-      // padding-bottom: 10px;
       .mobile_logo{ 
         background-image: url('/images/logo.svg');
         background-repeat: no-repeat;
@@ -84,13 +84,21 @@ header{
         position: absolute;
         padding: auto;
         margin:auto;
-      // position: absolute;
       }
       .nameof{
         font-size: 22px;
         padding-left: 100px;
         padding-bottom: 15px;
         padding-top: 15px;
+        @media #{$small-only} {
+          color: $blueGen;
+          font-weight: lighter;
+          span{
+          font-weight: bolder;
+          font-size: 25px;
+          color: $blueGen
+          }
+        }
       }
       .agency{
         visibility: hidden;
@@ -110,7 +118,6 @@ header{
       }
       ul{
         padding-top: 20px;
-        // border: solid blue 3px;
         @media #{$small-only} {
           margin: 0px;
           padding: 0px;
@@ -124,8 +131,6 @@ header{
         li{      
           text-align: center;
           display: inline-block;
-          // background-color: green;
-          // border: solid green 1px;
           @media #{$small-only} {
             text-align: left;
             width: 100%;
@@ -140,7 +145,6 @@ header{
             padding-left: 15px;
             color: $blueGen;
             display: block;
-            // background-color: red;
             line-height: 25px;
             width: 100%;
             @media #{$small-only} {
@@ -156,7 +160,6 @@ header{
           }
           a:hover{
             color: $white;
-            // background-color: green;
           }
         }
       }
@@ -167,10 +170,14 @@ header{
   @media #{$small-only} {
     padding: 0px;
   }
+  @media #{$medium-only} {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 .hero{
   margin-top: 80px;
-  padding-bottom: 20px;
+  padding-bottom: 55px;
   text-align: center;
   @media #{$small-only} {
     text-align: center;
@@ -207,7 +214,6 @@ header{
           float: none;
           padding-left:0px;
           margin: 110px auto 0px;
-          // margin-top: 110px;
         }
         @media #{$small-only} {
           max-width: 90%;
@@ -235,12 +241,10 @@ header{
         margin-top: -30px;
       }
     }
-      // float: right;÷
     .hero_action{
       float: right;
       
       @media #{$medium-only} {     
-        //height: auto;
         width: auto;
         float: none;
         margin-bottom: 40px;
@@ -271,8 +275,6 @@ header{
         
         @media #{$medium-only} {
           float: none;
-          // margin-bottom: -20px;
-          // margin: -110500px;
         }
         @media #{$small-only} {
           float: none;
@@ -290,8 +292,8 @@ header{
   .row{
     .small-12{
       @media #{$small-only} { 
-      padding-left: 20%;
-      padding-right: 20%
+      padding-left: 8%;
+      padding-right: 8%
       }
     }
     .to_the_moon{
@@ -312,25 +314,19 @@ header{
       .highlight_description{
         margin-top: -50px;
         @media #{$small-only} {
-          // padding:0px;
         }
       }
       h3{
         color: $white;
-        // font-weight: bold;
         text-align: center;
-        // margin-top: 0px;
         margin-bottom: 0px;
         padding-bottom: 20px;
         padding-top: 15px;
         
-        @media #{$large-only} {
+        @media #{$large-up} {
           border-bottom: solid $borderpt1 1px;
         }
         @media #{$medium-only} {
-          // float: right;
-          // background-color: red;
-          // color: red;
           max-width: auto;
           padding-top: 50px;
         }
@@ -342,7 +338,6 @@ header{
         text-align: center;
         color: $white;
         font-size: 56px;
-        // font-weight: lighter;
         @media #{$large-up} {
         border-top: solid $borderpt2 1px;
         }
@@ -356,8 +351,6 @@ header{
           padding-bottom: auto;
           margin-bottom: auto;
           width: 45%;
-          // padding-right: 110px;
-          // padding-left: 110px;
           height: 200px;
         }
         @media #{$small-only} {
@@ -417,15 +410,12 @@ header{
       h2{
         color: $white;
         font-size: 28px;
-        // float: right;
         padding-top: 54px;
 
       }
       h3{
         color: $white;
-        // font-weight: bold;
         text-align: center;
-        // margin-top: 0px;
         margin-bottom: 0px;
         padding-bottom: 20px;
         padding-top: 15px;
@@ -435,7 +425,6 @@ header{
         text-align: center;
         color: $white;
         font-size: 56px;
-        // font-weight: lighter;
         margin-top: 0px;
         padding-top: 20px;
         
@@ -447,8 +436,6 @@ header{
           float: left;
           height: 200px;
           border-right: solid $borderpt1 1px;
-          // padding-right: 110px;
-          // padding-left: 110px;
           padding-top: 0px;
           margin-top: -2px;  
           padding-top: 50px;
@@ -459,7 +446,6 @@ header{
         }
       }
       h4 span{
-        // width: 0px;
         border-bottom: solid $white 9px;
         padding-bottom: 8px;
         font-weight: lighter;
@@ -490,17 +476,13 @@ header{
     }
     .just_around_the_earth:hover{
       background-color: $hover_color_price;
-      // border: solid $hover_color_price 2px;
       border-radius: 6px;
     }
     .highlight{
       background-color: $hover_color;
       height: 292px;
-      // border: solid $hover_color 2px;
       border-radius: 7px;
       text-align: center;
-      // margin-right: 0px;
-      // margin-left: 0px;
       .just_to_jupiter{
         padding: 15px;
         border-bottom: solid $borderpt1 1px;
@@ -526,13 +508,9 @@ header{
       a.more_deals_desktop{
         height: 70px;
         width: 100%;
-        // border: solid $hover_color 2px;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius:  6px;
         color: $white;
-        // padding: 60px;
-        // overflow: hidden;
-        // z-index: -1;
         display: block;
         padding-top: 20px;
         border-top: solid $borderpt2 1px;
@@ -549,14 +527,8 @@ header{
         margin-left: -47px;
       }
       a.more_deals_desktop:hover{
-        // text-align: center;
-        // height: 70px;
-        // border-bottom: solid $hover_color_price 5px;
         background-color: $hover_color_price;
         padding-bottom: 0px;
-
-        // padding-left: 20px;
-
       }
     }
   }
@@ -567,8 +539,14 @@ a.more_deals_mobile{
   width: 100%;
   background-color: $blueGen;
   margin-top: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 20px;
+  color: $white;
+  height: 50px;
+  background-image: url("/images/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 65% center;
+  background-size: 40px 40px;
 
 }
 
@@ -578,7 +556,7 @@ footer{
   text-align: center;
   color: $hover_color;
   @media #{$medium-up} {
-    margin-top: 40px;
+    margin-top: 55px;
   }
   p{
     font-weight: lighter;
