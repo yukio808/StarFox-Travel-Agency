@@ -10,7 +10,7 @@ $white: #FFFFFF;
 $shader_txt: #CCCCCC;
 $borderpt1: #555555;
 $borderpt2: #777777;
-$hover_color_price: #444444;
+$hover_color_price: #222222;
 
 
 body{
@@ -259,12 +259,12 @@ header{
         background-color: $dark-color;
         padding-top: 20px;
         padding-bottom: 11px;
-        padding-left: 70px;
+        padding-left: 60px;
         padding-right: 70px;
         font-size: 22px;
         font-weight: lighter;
         color: $shader_txt;
-        border-bottom: solid $dark-color 9px;
+        border-bottom: solid $hover_color_price 9px;
         
         @media #{$large-up} {
           float: right;

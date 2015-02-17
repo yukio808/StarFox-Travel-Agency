@@ -3220,12 +3220,12 @@ header nav.top-bar section {
         background-color: #333333;
         padding-top: 20px;
         padding-bottom: 11px;
-        padding-left: 70px;
+        padding-left: 60px;
         padding-right: 70px;
         font-size: 22px;
         font-weight: lighter;
         color: #CCCCCC;
-        border-bottom: solid #333333 9px; }
+        border-bottom: solid #222222 9px; }
         @media only screen and (min-width:64.063em) {
           .hero .hero_wrap .hero_action .hero_button {
             float: right;
@@ -3323,8 +3323,8 @@ header nav.top-bar section {
         margin: auto;
         padding: auto; } }
 .highlights .row .to_the_moon:hover {
-  background-color: #444444;
-  border: solid #444444 2px;
+  background-color: #222222;
+  border: solid #222222 2px;
   border-radius: 6px; }
 .highlights .row .just_around_the_earth {
   background-color: #666666;
@@ -3394,7 +3394,7 @@ header nav.top-bar section {
         padding: auto;
         text-align: center; } }
 .highlights .row .just_around_the_earth:hover {
-  background-color: #444444;
+  background-color: #222222;
   border-radius: 6px; }
 .highlights .row .highlight {
   background-color: #666666;
@@ -3439,7 +3439,7 @@ header nav.top-bar section {
     position: relative;
     margin-left: -47px; }
   .highlights .row .highlight a.more_deals_desktop:hover {
-    background-color: #444444;
+    background-color: #222222;
     padding-bottom: 0px; }
 
 a.more_deals_mobile {
@@ -3459,7 +3459,7 @@ a.more_deals_mobile {
 
 footer {
   display: block;
-  background-color: #444444;
+  background-color: #222222;
   text-align: center;
   color: #666666; }
   @media only screen and (min-width:40.063em) {
